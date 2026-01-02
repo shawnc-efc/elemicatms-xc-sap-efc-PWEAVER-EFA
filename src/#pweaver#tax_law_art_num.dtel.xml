@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>/PWEAVER/TAX_LAW_ART_NUM</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>/PWEAVER/CHAR20</DOMNAME>
+    <HEADLEN>28</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>28</SCRLEN3>
+    <DDTEXT>Tax Law Article Number</DDTEXT>
+    <REPTEXT>Tax Law Article Number</REPTEXT>
+    <SCRTEXT_S>Tax Law Ar</SCRTEXT_S>
+    <SCRTEXT_M>Tax Law Article Numb</SCRTEXT_M>
+    <SCRTEXT_L>Tax Law Article Number</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

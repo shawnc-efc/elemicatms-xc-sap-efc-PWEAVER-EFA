@@ -1,0 +1,11 @@
+PROCESS BEFORE OUTPUT.
+ MODULE STATUS_0900.
+   LOOP AT it_invoice INTO wa_invoice WITH CONTROL tc_invoices.
+
+  ENDLOOP.
+
+PROCESS AFTER INPUT.
+ LOOP AT it_invoice.
+    MODULE update_selected.
+  ENDLOOP.
+ MODULE USER_COMMAND_0900.

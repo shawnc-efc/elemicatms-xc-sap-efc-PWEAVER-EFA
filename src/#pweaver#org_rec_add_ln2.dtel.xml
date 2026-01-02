@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>/PWEAVER/ORG_REC_ADD_LN2</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>/PWEAVER/CHAR20</DOMNAME>
+    <HEADLEN>33</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>33</SCRLEN3>
+    <DDTEXT>Original Recipient Address Line 2</DDTEXT>
+    <REPTEXT>Original Recipient Address Line 2</REPTEXT>
+    <SCRTEXT_S>Original R</SCRTEXT_S>
+    <SCRTEXT_M>Original Recipient A</SCRTEXT_M>
+    <SCRTEXT_L>Original Recipient Address Line 2</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for EFA</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>/PWEAVER/LEFAAATOP</SOBJ_NAME>
+    <SOBJ_NAME>/PWEAVER/SAPLEFAAA</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>/PWEAVER/FEDEXFREIGHT_UPLOAD</FUNCNAME>
+     <SHORT_TEXT>FM for FedEx fREIGHT Invoice upload</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>PS_PLANT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MARC-WERKS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_DATE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-DATUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PS_CARR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/PWEAVER/CCONFIG-CARRIERTYPE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>SUBRC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-SUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ALSMEX_TABLINE</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>PS_PLANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Current Date of Application Server</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PS_CARR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PW : Carrier Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SUBRC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Value of ABAP Statements</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Rows for Table with Excel Data</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/PWEAVER/FEDEX_INVOICE_UPLOAD</FUNCNAME>
+     <SHORT_TEXT>FM for FedEx Invoice upload</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>PS_PLANT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>MARC-WERKS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_DATE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-DATUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PS_CARR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/PWEAVER/CCONFIG-CARRIERTYPE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>SUBRC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-SUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>KCDE_CELLS</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>PS_PLANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Current Date of Application Server</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PS_CARR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PW : Carrier Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SUBRC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Value of ABAP Statements</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Rows for Table with Excel Data</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>/PWEAVER/UPS_INVOICE_UPLOAD</FUNCNAME>
+     <SHORT_TEXT>FM to upload UPS invoice</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>PS_PLANT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SY-DATUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PS_CARR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/PWEAVER/CCONFIG-CARRIERTYPE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>SUBRC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-SUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>KCDE_CELLS</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>PS_PLANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Current Date of Application Server</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PS_CARR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PW : Carrier Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SUBRC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Value of ABAP Statements</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Rows for Table with Excel Data</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>/PWEAVER/OVR_QTY</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>/PWEAVER/INT4</DOMNAME>
+    <HEADLEN>28</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>28</SCRLEN3>
+    <DDTEXT>Oversize Quantity</DDTEXT>
+    <REPTEXT>Oversize Quantity</REPTEXT>
+    <SCRTEXT_S>Oversize Q</SCRTEXT_S>
+    <SCRTEXT_M>Oversize Quantity</SCRTEXT_M>
+    <SCRTEXT_L>Oversize Quantity</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>
